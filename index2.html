@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker Game</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .game-container {
+            text-align: center;
+        }
+        canvas {
+            background: #eee;
+        }
+        .score-board {
+            margin-bottom: 10px;
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div id="high-content" class="score-board">High Score: 0</div>
+        <div id="score-content" class="score-board">Score: 0</div>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div class="start-container">
+            <button id="start-btn">Start Game</button>
+        </div>
+        <div class="end-container hide">
+            <button id="play">Play Again</button>
+        </div>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    
+    <!-- Link to your JavaScript file -->
+    <script src="breakout.1.js"></script>
+</body>
+</html>
